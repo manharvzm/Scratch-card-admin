@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   const fetchEntries = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/scratch/entries');
+      const res = await axios.get('http://manhar-backend.vercel.app/api/scratch/entries');
       setEntries(res.data);
     } catch (err) {
       console.error('Failed to fetch entries:', err);
