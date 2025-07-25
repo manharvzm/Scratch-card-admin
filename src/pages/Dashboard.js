@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   const fetchEntries = async () => {
     try {
-      const res = await axios.get('https://admin-backend-orcin-six.vercel.app/api/scratch/entries');
+      const res = await axios.get('https://admin-backend-orcin-six.vercel.app/api/entries');
       setEntries(res.data);
     } catch (err) {
       console.error('Failed to fetch entries:', err);
